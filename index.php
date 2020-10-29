@@ -1,3 +1,3 @@
 <?php
-echo("Witam");
+echo "Witam"
 ?>
