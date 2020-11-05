@@ -10,7 +10,7 @@ $servername = "mateusz_kus"
  $password = "Strona123"
  $dbname = "mateusz"
  
-$conn = new mysqli("mateusz_kus","mateusz","Strona123","mateusz");
+$conn = new mysqli("$servername","$username","$password","$dbname");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
