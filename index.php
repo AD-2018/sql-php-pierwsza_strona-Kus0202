@@ -5,10 +5,10 @@
 </head>
 <body>
 <?php
-$servername = "mateusz_kus"
+$servername = " mysql-mateusz.alwaysdata.net"
  $username = "mateusz"
  $password = "Strona123"
- $dbname = "mateusz"
+ $dbname = " mateusz"
  
 $conn = new mysqli("$servername","$username","$password","$dbname");
 $sql = "SELECT * FROM pracownicy";
