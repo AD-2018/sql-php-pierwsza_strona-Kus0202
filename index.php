@@ -4,6 +4,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+ <h1>Zadanie 1</h1>
+ <h2>Select *From Pracownicy</h1>
 <?php
 $servername = " mysql-mateusz.alwaysdata.net"
  $username = "mateusz"
