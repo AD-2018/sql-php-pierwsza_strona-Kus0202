@@ -5,8 +5,8 @@
 </head>
 <body>
  
- <h1>Zadanie 1</h1>
- <h2>Select *From Pracownicy</h1>
+ <h1>Zadanie 1 Mateusz Kuś</h1>
+ 
 <?php
 $servername = " mysql-mateusz.alwaysdata.net"
  $username = "mateusz"
