@@ -8,7 +8,7 @@ echo "Witam"
 <body>
 <?php
 
-$conn = new mysqli("mateusz_kus","mateusz","Strona123","mateusz_kus");
+$conn = new mysqli("mateusz_kus","mateusz","Strona123","mateusz");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
