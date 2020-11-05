@@ -8,10 +8,10 @@
  <h1>Zadanie 1 Mateusz Kuś</h1>
  
 <?php
-$servername = "sql2.freemysqlhosting.net"
- $username = "sql2374586"
- $password = ""
- $dbname = "sql2374586"
+$servername = " mysql-mateusz.alwaysdata.net"
+ $username = "mateusz"
+ $password = "Strona123"
+ $dbname = "mateusz"
  
 $conn = new mysqli("$servername","$username","$password","$dbname");
 if ($conn->connect_error) {
