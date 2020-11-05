@@ -10,7 +10,7 @@
 <?php
 $servername = "sql2.freemysqlhosting.net"
  $username = "sql2374586"
- $password = "zB1!qI2!"
+ $password = ""
  $dbname = "sql2374586"
  
 $conn = new mysqli("$servername","$username","$password","$dbname");
