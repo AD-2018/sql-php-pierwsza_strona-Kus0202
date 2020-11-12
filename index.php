@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
- <head>
-   <meta charset = "UTF-8">
-   <title>Strona</title>
 <?php
 $servername = "mysql-mateusz.alwaysdata.net";
 $username = "mateusz";
