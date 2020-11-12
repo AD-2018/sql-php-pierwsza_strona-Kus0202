@@ -8,10 +8,10 @@
  <h1>Zadanie 1 Mateusz Kuś</h1>
  
 <?php
-$servername = " mysql-mateusz.alwaysdata.net"
- $username = "mateusz"
- $password = "Strona123"
- $dbname = "mateusz"
+$servername = " mysql-mateusz.alwaysdata.net";
+ $username = "mateusz";
+ $password = "Strona123";
+ $dbname = "mateusz";
  
 $conn = new mysqli("$servername","$username","$password","$dbname");
 
