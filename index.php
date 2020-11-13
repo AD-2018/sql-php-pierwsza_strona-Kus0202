@@ -8,10 +8,10 @@
     
    
 <?php
-$servername = "mysql12.paris1";
+$servername = "mysql-mateusz.alwaysdata.net";
 $username = "mateusz";
 $password = "Strona123";
-$dbname = "mateusz";
+$dbname = "mateusz_kus";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
     echo("<h3> PIERWOWZÓR </h3>");
