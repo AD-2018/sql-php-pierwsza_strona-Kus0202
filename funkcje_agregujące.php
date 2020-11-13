@@ -26,7 +26,7 @@
 
     $result = mysqli_query($conn, $sql);
     if ( $result) {
-         echo "<li>ok";
+         echo "<li>Funkcje Agregujące";
      } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
