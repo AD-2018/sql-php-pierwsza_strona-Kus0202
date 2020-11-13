@@ -21,9 +21,9 @@
     $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
     $result = mysqli_query($conn, $sql);
-
-    echo("<h1>Zadanie 1</h1>");
-    echo("<h2>".$sql."</h2>");
+ echo("<h1> Pracownicy i Organizacja </h1>");
+    echo("<h2>Zadanie 1</h2>");
+    echo("<h3>".$sql."</h3>");
 
     echo("<table border='1'>");
     echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzial</th>");
