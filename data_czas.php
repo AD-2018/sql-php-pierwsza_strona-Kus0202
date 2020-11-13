@@ -23,7 +23,7 @@ $password = "Strona123";
 $dbname = "mateusz_kus";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-    echo("<h3> PIERWOWZÓR </h3>");
+    echo("<h3> Czas i Data </h3>");
 $sql = "SELECT * FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
