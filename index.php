@@ -8,7 +8,7 @@
     
    
 <?php
-$servername = "mysql-mateusz.alwaysdata.net";
+$servername = "mysql12.paris1";
 $username = "mateusz";
 $password = "Strona123";
 $dbname = "mateusz";
