@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jakub Erfurt nr1</h1>
+    <h1>Mateusz Kuś</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <br>
     <a href="pracownicy_organizacja.php">Organizacja i Pracownicy</a>
