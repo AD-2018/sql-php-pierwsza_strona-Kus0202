@@ -12,7 +12,8 @@
     <br>
     <a href="index.php">Pracownicy</a>
     <a href="pracownicy_organizacja.php">Organizacja i Pracownicy</a>
-</body>
+    <a href="data_czas.php">Data i Czas</a>
+    /body>
 </html>
 <?php
     require_once("connect.php");
