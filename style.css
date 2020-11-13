@@ -18,11 +18,11 @@ th {
 tr:nth-child(even) {background-color: green;}
 th {
   background-color: black;
-  color: white;
+  color: Blue;
 }
 <h1>
 {
-  color: orange;
+  color: lightcyan;
 }
 </h1>
 
