@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jakub Erfurtz nr1</h1>
+    <h1>Mateusz Kuś</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <br>
     <a href="index.php">Pracownicy</a>
-    <a href="funkAgregujaca.php">Funkcje agregujące</a>
+    <a href="funkcje_agregujące.php">Funkcje agregujące</a>
 </body>
 </html>
 <?php
