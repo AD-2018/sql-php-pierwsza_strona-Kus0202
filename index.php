@@ -11,7 +11,7 @@
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <br>
     <a href="pracownicy_organizacja.php">Organizacja i Pracownicy</a>
-    <a href="funkcję_agregujące.php">Funkcje agregujące</a>
+    <a href="funkcje_agregujące.php">Funkcje agregujące</a>
 </body>
 </html>
 <?php
