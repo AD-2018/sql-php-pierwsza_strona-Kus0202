@@ -10,8 +10,8 @@
     <h1>Jakub Erfurt nr1</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <br>
-    <a href="praciorg.php">Organizacja i Pracownicy</a>
-    <a href="funkAgregujaca.php">Funkcje agregujące</a>
+    <a href="pracownicy_organizacja.php">Organizacja i Pracownicy</a>
+    <a href="funkcję_agregujące.php">Funkcje agregujące</a>
 </body>
 </html>
 <?php
