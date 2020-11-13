@@ -13,7 +13,7 @@
     <a href="index.php">Pracownicy</a>
     <a href="pracownicy_organizacja.php">Organizacja i Pracownicy</a>
     <a href="data_czas.php">Data i Czas</a>
-    /body>
+    </body>
 </html>
 <?php
     require_once("connect.php");
