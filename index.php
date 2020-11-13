@@ -4,9 +4,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
+    <h1>Mateusz Kuś</h1>
   
-    
-   
 <?php
 $servername = "mysql-mateusz.alwaysdata.net";
 $username = "mateusz";
@@ -68,3 +68,4 @@ $result = mysqli_query($conn, $sql);
     ?>
     </body>
 </html>
+
