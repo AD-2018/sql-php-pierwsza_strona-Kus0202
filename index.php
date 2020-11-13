@@ -2,7 +2,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-</head>
+    <h1>Pracownicy</h1>
+    <style>
+body {background-color: powderblue;}
+h1   {color: red;}
+</style>
+    </head>
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <h1>Mateusz Kuś</h1>
