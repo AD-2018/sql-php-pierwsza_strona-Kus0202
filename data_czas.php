@@ -12,7 +12,7 @@
         <br>
         <a href="pracownicy_organizacja.php">Pracownicy Organizacja</a>
         <br>
-        <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
+        <a href="funkcje_agregujące.php">Funkcje Agregujace</a>
         <br>
         <a href="data_czas.php">Data i Czas</a>
     </div>
