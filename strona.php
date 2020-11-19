@@ -3,8 +3,12 @@
 	
 	echo("<ul>");
 	
-	echo("<li>".$_POST["firstname"]);
+	echo("<li>".$_POST["imie"]);
 		
 	echo("<ul>");
+        
+        echo("<li>".$_POST["nazwisko"]);
+
+        echo("<ul>");
 ?>
 
