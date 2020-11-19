@@ -13,6 +13,7 @@
     <a href="pracownicy_organizacja.php">Organizacja i Pracownicy</a>
     <a href="funkcje_agregujące.php">Funkcje agregujące</a>
     <a href="data_czas.php">Data i Czas</a>
+    <a href="fromularz.html">Formularz</a>
 </body>
 </html>
 <?php
