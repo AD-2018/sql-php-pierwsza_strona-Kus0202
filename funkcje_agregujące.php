@@ -10,7 +10,7 @@
     <h1>Mateusz Kuś nr.20</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <br>
-    <a href="index.php">Pracownicy</a>
+    <a href="index.php">Strona Główna</a>
     <a href="pracownicy_organizacja.php">Organizacja i Pracownicy</a>
     <a href="data_czas.php">Data i Czas</a>
     </body>
