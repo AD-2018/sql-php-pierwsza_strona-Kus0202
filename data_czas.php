@@ -4,9 +4,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <h1>Mateusz Kuś nr.20</h1>
-    
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
     <div class = "nav">
         <a href="index.php">Strona Główna</a>
         <a href="pracownicy_organizacja.php">Pracownicy Organizacja</a>
