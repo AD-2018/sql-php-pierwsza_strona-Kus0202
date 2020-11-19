@@ -3,11 +3,10 @@
        
         echo("<ul>");
 
-echo("<li>".$_POST["imie"]);
-echo("<li>".$_POST["nazwisko"]);
-echo("<li>".$_POST["miasto"]);
-echo("<li>".$_POST["telefon"]);
-echo("<li>".$_POST["kod pocztowy"]);
+echo("<li>".$_POST["Firstname"]);
+echo("<li>".$_POST["City"]);
+echo("<li>".$_POST["Phone"]);
+echo("<li>".$_POST["Poscode"]);
 echo("<ul>");
 	
 ?>
