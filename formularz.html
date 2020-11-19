@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<div class = "nav">
+        <a href="index.php">strona główna</a>
+        <br>
+        <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
+        <br>
+        <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
+        <br>
+        <a href="data_czas.php">Data i Czas</a>
+        <br>
+        <a href="Formularz.html">Formularze</a>
+        <br>
+        <a href="strona.php">Strona Formularza</a>
+    </div>
+
 <form action="strona.php" method="POST">
-   <input type="text" name="firstname"><br>
-   <input type="submit" value="wyślij do strona.php">
+	<label>Firstaname</label>
+	<input type="text" name="firstname"></br>
+	<label>Lastname</label>
+	<input type="text" name="lastname"></br>
+	<label>city</label>
+	<input type="text" name="city"></br>
+	<label>phone</label>
+	<input type="text" name="phone"></br>
+	<label>postcode</label>
+	<input type="text" name="poscode"></br>
+	<input type="submit" value="wyslij do strona.php">
 </form>
-</body>
-</html>
+
