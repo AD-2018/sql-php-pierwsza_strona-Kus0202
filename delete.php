@@ -1,12 +1,12 @@
 <?php
-echo("jestes w delete.php <br>");
+echo(" Jesteś w delete.php<br>");
 echo $_POST['id'];
 
 
-$servername = "mysql-mateusz.alwaysdata.net";
-$username = "mateusz";
-$password = "Strona123";
-$dbname = "mateusz_kus";
+$servername = "sql7.freemysqlhosting.net"; 
+$username = "sql7374844"; 
+$password = "6cxJ7qTmxi"; 
+$dbname = "sql7374844";    
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 //definiujemy zapytanie $sql
-$sql = "DELETE FROM Pracownik WHERE id=".$_POST['id'];
+$sql = "DELETE FROM Pracownik WHERE id=.$_POST['id'];";
 
 //wyświetlamy zapytanie $sql
 echo $sql;
@@ -27,3 +27,4 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+
