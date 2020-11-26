@@ -16,7 +16,7 @@
     <a href="formularz.html">Formularz</a>
     <a href="DaneDoBazy.html">Dane Do Bazy</a>
     <a href="delete.php">Delete</a>
-    <?php
+   
     
     </body>
     </html>
