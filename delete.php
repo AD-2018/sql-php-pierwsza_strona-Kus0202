@@ -1,5 +1,5 @@
 <?php
-echo("jestes w delete.php <br>");
+echo("Jesteś w delete.php <br>");
 echo $_POST['id'];
 
 
