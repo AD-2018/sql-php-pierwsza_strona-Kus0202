@@ -15,7 +15,7 @@
     <a href="data_czas.php">Data i Czas</a>
     <a href="formularz.html">Formularz</a>
     <a href="DaneDoBazy.html">Dane do bazy</a>
-    <a href="delete.php">Usuwanie</a>
+    <a href="delete.php">Delete</a>
 </body>
 </html>
 <?php
