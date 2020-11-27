@@ -17,8 +17,8 @@ th {
 }
 tr:nth-child(even) {background-color: green;}
 th {
-  background-color: pink;
-  color: Blue;
+  background-color:blue ;
+  color: black;
 }
 <h1>
 {
