@@ -1,30 +1,23 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
-echo("Jesteś w delete.php <br>");
-echo $_POST['id_pracownicy'];
+require_once("connect.php");
+echo("Delete" . "<br>");
+echo $_POST['id'];
+echo "<br>";
 
-
-$servername = "mysql-mateusz.alwaysdata.net";
-$username = "mateusz";
-$password = "Strona123";
-$dbname = "mateusz_kus";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-//definiujemy zapytanie $sql
-$sql = "DELETE FROM pracownicy WHERE id=".$_POST['id_pracownicy'];
-
-//wyświetlamy zapytanie $sql
-echo $sql;
+$sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id'];
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  header('Location: https://mateusz.kus.herokuapp.com/DaneDoBazy.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();
 ?>
-
+</body>
+</html>
