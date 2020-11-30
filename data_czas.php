@@ -10,7 +10,6 @@
         <a href="index.php">Strona Główna</a>
         <a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
         <a href="funkcje_agregujące.php">Funkcje Agregujace</a>
-        <a href="data_czas.php">Data i Czas</a>
     </div>
 <?php
   $servername = "mysql-mateusz.alwaysdata.net";
