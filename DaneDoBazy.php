@@ -16,11 +16,11 @@
 				
 			<input type="text" name="imie"><br>
 	
-			<input type="text" number="dzial"></br>
+			<input type="number" name="dzial"></br>
 				
-			<input type="text" number="zarobki"></br>
+			<input type="number" name="zarobki"></br>
 	
-			<input type="date" date="data_urodzenia"></br>
+			<input type="date" name="data_urodzenia"></br>
 				
 			<input type="submit" value="Dodaj Pracownika">
 </form>
