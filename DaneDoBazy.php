@@ -10,7 +10,7 @@
 	  <div class="nav">
       <a href="index.php">Strona Główna</a>
   </div>
-<h1>Dodawanie pracownika</h1>
+<h1>Dodawanie Pracownika</h1>
 <form action="insert.php" method="POST">
 
 				
@@ -26,8 +26,8 @@
 </form>
 <h2>Usuwanie Pracownika</h2>
 <form action="delete.php" method="POST">
-<input type="number" name="id_pracownicy"<br>
-   <input type="submit" value="Usuń pracownika">
+	<label>Podaj ID Pracownika:</label><input type="number" name="id_pracownicy"<br>
+   <input type="submit" value="Usuń Pracownika">
 </form>
 <?php
 $servername = "mysql-mateusz.alwaysdata.net"; 
