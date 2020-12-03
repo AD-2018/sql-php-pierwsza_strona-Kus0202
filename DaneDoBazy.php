@@ -13,15 +13,18 @@
 <h1>Dodawanie Pracownika</h1>
 <form action="insert.php" method="POST">
 
-				
+			<label>Imię:</label>	
 			<input type="text" name="imie"><br>
-	<label>Imię:</label>
+	
+	                <label>Dział:</label>
 			<input type="number" name="dzial"></br>
-	<label>Dział:</label>			
+	
+			<label>Zarobki:</label>
 			<input type="number" name="zarobki"></br>
-	<label>Zarobki:</label>
+	
+	                <label>Data Urodzenia:</label>
 			<input type="date" name="data_urodzenia"></br>
-<label>Data Urodzenia:</label>
+
 				
 			<input type="submit" value="Dodaj Pracownika">
 </form>
