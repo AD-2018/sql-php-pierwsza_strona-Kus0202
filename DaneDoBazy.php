@@ -31,10 +31,10 @@
    <input type="submit" value="usuń pracownika">
 </form>
 <?php
-$servername = "sql7.freemysqlhosting.net"; 
-$username = "sql7374844"; 
-$password = "6cxJ7qTmxi"; 
-$dbname = "sql7374844";    
+$servername = "mysql-mateusz.alwaysdata.net"; 
+$username = "mateusz"; 
+$password = "Strona123"; 
+$dbname = "mateusz_kus";    
 
 $conn= new mysqli($servername,$username,$password,$dbname);  
     echo("<h2>Podstawowe</h2>"); 
