@@ -36,9 +36,9 @@ $password = "Strona123";
 $dbname = "mateusz_kus";    
 
 $conn= new mysqli($servername,$username,$password,$dbname);  
-    echo("<h3>Pracownicy</h3>"); 
+     
 $sql ="select * from pracownicy"; 
-echo("<h4>Tabelka Pracownicy</h4>"); 
+echo("<h3>Tabelka Pracowników</h3>"); 
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
