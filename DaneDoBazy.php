@@ -24,9 +24,7 @@
 	
 	                <label>Data Urodzenia:</label>
 			<input type="date" name="data_urodzenia"></br>
-
-				
-			<input type="submit" value="Dodaj Pracownika">
+	                <input type="submit" value="Dodaj Pracownika">
 </form>
 <h2>Usuwanie Pracownika</h2>
 <form action="delete.php" method="POST">
