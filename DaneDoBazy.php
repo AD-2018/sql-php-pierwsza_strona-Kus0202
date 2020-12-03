@@ -30,7 +30,8 @@
 </form>
 <h2>Usuwanie Pracownika</h2>
 <form action="delete.php" method="POST">
-	<label>Podaj ID Pracownika:</label><input type="number" name="id_pracownicy"<br>
+	<label>Podaj ID Pracownika:</label>
+	<input type="number" name="id_pracownicy"<br>
    <input type="submit" value="Usuń Pracownika">
 </form>
 <?php
