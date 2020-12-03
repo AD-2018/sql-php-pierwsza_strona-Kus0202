@@ -37,7 +37,7 @@ $dbname = "mateusz_kus";
 
 $conn= new mysqli($servername,$username,$password,$dbname);  
      
-$sql ="select * from pracownicy"; 
+$sql ="Select * From Pracownicy"; 
 echo("<h3>Tabelka Pracowników</h3>"); 
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
