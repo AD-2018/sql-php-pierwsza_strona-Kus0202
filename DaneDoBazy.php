@@ -15,12 +15,13 @@
 
 				
 			<input type="text" name="imie"><br>
-	
+	<label>Imię:</label>
 			<input type="number" name="dzial"></br>
-				
+	<label>Dział:</label>			
 			<input type="number" name="zarobki"></br>
-	
+	<label>Zarobki:</label>
 			<input type="date" name="data_urodzenia"></br>
+<label>Data Urodzenia:</label>
 				
 			<input type="submit" value="Dodaj Pracownika">
 </form>
@@ -38,7 +39,7 @@ $dbname = "mateusz_kus";
 $conn= new mysqli($servername,$username,$password,$dbname);  
      
 $sql ="select * from pracownicy"; 
-echo("<h3>Tabelka Pracowników</h3>"); 
+echo("<h3>Tabela Pracowników</h3>"); 
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
