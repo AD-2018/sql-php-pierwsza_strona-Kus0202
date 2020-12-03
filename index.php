@@ -15,7 +15,6 @@
     <a href="data_czas.php">Data i Czas</a>
     <a href="formularz.html">Formularz</a>
     <a href="DaneDoBazy.html">Dane Do Bazy</a>
-    <a href="delete.php">Delete</a>
    <?php
 require_once("connect.php");
 
