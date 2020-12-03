@@ -6,7 +6,7 @@
   <title>Dodawanie i Usuwanie</title>
 </head>
 <body>
-	  <a href="https://sql-php-pierwsza_strona-Kus0202">github</a><br>
+	  <a href="https://sql-php-pierwsza_strona-Kus0202.com">github</a><br>
 	  <div class="nav">
       <a href="index.php">Strona Główna</a>
   </div>
