@@ -1,34 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dodawanie i Usuwanie</title>
 </head>
 <body>
-    <h1 class="name">Mateusz Kuś nr.20</h1>
-    <a href="https://sql-php-pierwsza_strona-Kus0202" class="github-link">github</a>
-    <br>
-    <nav class="nav">
-        <a href="index.php">Strona Główna</a>
-        <a href="funkcję_agregujące.php">Funkcje agregujące</a>
-        <a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
-        <a href="data_czas.php">Data i Czas</a>
-        <a href="formularz.html">Formularz</a>
-    </nav><br>
-    <h2>Dodawanie Pracownika</h2>
-    <form action="insert.php" method="POST">
-	    <input type="text" name="imie"><br>
-		<input type="number" name="dzial"></br>
-		<input type="number" name="zarobki"></br>
-		<input type="date" name="data_urodzenia"></br>
-		<input type="submit" value="Dodaj Pracownika">
-    </form>
-    <h3>Usuwanie Pracownika</h3>
-    <form action="delete.php" method="POST">
-        <input type="number" name="id"></br>
-        <input type="submit" value="Usuń Pracownika">
-     </form>
+	  <a href="https://sql-php-pierwsza_strona-Kus0202">github</a><br>
+	  <div class="nav">
+      <a href="index.php">Strona Główna</a>
+  </div>
+<h1>Dodawanie pracownika</h1>
+<form action="insert.php" method="POST">
+
+				
+			<input type="text" name="imie"><br>
+	
+			<input type="text" name="dzial"></br>
+				
+			<input type="text" name="zarobki"></br>
+	
+			<input type="date" name="data_urodzenia"></br>
+				
+			<input type="submit" value="Dodaj pracownika">
+</form>
+<h2>Usuwanie Pracownika</h2>
+<form action="delete.php" method="POST">
+	<label>Podaj id:</label><input type="number" name="id_pracownicy"</br>
+				/* padding: 1rem; */></br>
+   <input type="submit" value="usuń pracownika">
+</form>
+<?php
+$servername = "sql7.freemysqlhosting.net"; 
+$username = "sql7374844"; 
+$password = "6cxJ7qTmxi"; 
+$dbname = "sql7374844";    
+
+$conn= new mysqli($servername,$username,$password,$dbname);  
+    echo("<h2>Podstawowe</h2>"); 
+$sql ="select * from pracownicy"; 
+echo("<h3>tabelka</h3>"); 
+    echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
+?>
 </body>
 </html>
