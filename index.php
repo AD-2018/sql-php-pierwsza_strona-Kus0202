@@ -31,7 +31,7 @@ $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
 
-    echo("<h1>Tabelka</h1>");
+    echo("<h1>Tabela Pracowników</h1>");
 
     echo("<table border='1'>");
     echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzialu</th>");
