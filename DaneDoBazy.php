@@ -18,11 +18,11 @@
 	
 			<input type="text" number="dzial"></br>
 				
-			<input type="text" numberr="zarobki"></br>
+			<input type="text" number="zarobki"></br>
 	
 			<input type="date" date="data_urodzenia"></br>
 				
-			<input type="submit" value="Dodaj pracownika">
+			<input type="submit" value="Dodaj Pracownika">
 </form>
 <h2>Usuwanie Pracownika</h2>
 <form action="delete.php" method="POST">
@@ -38,7 +38,7 @@ $dbname = "mateusz_kus";
 $conn= new mysqli($servername,$username,$password,$dbname);  
     echo("<h3>Pracownicy</h3>"); 
 $sql ="select * from pracownicy"; 
-echo("<h3>tabelka</h3>"); 
+echo("<h4>Tabelka Pracownicy</h4>"); 
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
