@@ -1,37 +1,25 @@
 body {
   background-color: lightgray;
 }
+.link {
+  background-color: black;
+  padding: 1rem;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.link:hover {
+  background-color: white;
+}
 
-table {
+table, td {
   border-collapse: collapse;
-}
-a {
-    margin-left: 1rem;
-    font-weight: 500;
-    color: black;
-    padding: 1em;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 4em;
-    width: 4em;
-}
-th {
-  height: 70px;
-}
-td {
+  background-color: black;
   text-align: center;
+  padding: 8px;
 }
-th {
-  text-align: center;
-}
-tr:nth-child(even) {background-color: yellow;}
-th {
-  background-color:black ;
-  color: white;
-}
-<h1>
-{
-  color: lightcyan;
-}
-</h1>
 
+th {
+  background-color: yellow;
+  text-align: center;
+  padding: 8px;
+}
