@@ -1,29 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
-echo("Jesteś w delete.php <br>");
+echo("Delete<br>");
 echo $_POST['id_pracownicy'];
 
+require_once("connect.php");
 
-$servername = "mysql-mateusz.alwaysdata.net";
-$username = "mateusz";
-$password = "Strona123";
-$dbname = "mateusz_kus";
+$sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy'];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-//definiujemy zapytanie $sql
-$sql = "DELETE FROM pracownicy WHERE id=".$_POST['id_pracownicy'];
-
-//wyświetlamy zapytanie $sql
 echo $sql;
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+    header('Location: ');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();
 ?>
+</body>
+</html>
