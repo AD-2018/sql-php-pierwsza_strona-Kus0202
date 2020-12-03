@@ -5,7 +5,16 @@ body {
 table {
   border-collapse: collapse;
 }
-
+a {
+    margin-left: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 4em;
+    width: 4em;
+}
 th {
   height: 70px;
 }
