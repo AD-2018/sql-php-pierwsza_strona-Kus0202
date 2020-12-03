@@ -6,7 +6,7 @@
   <title>Dodawanie i Usuwanie</title>
 </head>
 <body>
-	  <a href="https://sql-php-pierwsza_strona-Kus0202.com">github</a><br>
+	  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a><br>
 	  <div class="nav">
       <a href="index.php">Strona Główna</a>
   </div>
@@ -16,18 +16,17 @@
 				
 			<input type="text" name="imie"><br>
 	
-			<input type="text" name="dzial"></br>
+			<input type="text" number="dzial"></br>
 				
-			<input type="text" name="zarobki"></br>
+			<input type="text" numberr="zarobki"></br>
 	
-			<input type="date" name="data_urodzenia"></br>
+			<input type="date" date="data_urodzenia"></br>
 				
 			<input type="submit" value="Dodaj pracownika">
 </form>
 <h2>Usuwanie Pracownika</h2>
 <form action="delete.php" method="POST">
-<input type="number" name="id_pracownicy"</br>
-				/* padding: 1rem; */></br>
+<input type="number" name="id_pracownicy"<br>
    <input type="submit" value="Usuń pracownika">
 </form>
 <?php
