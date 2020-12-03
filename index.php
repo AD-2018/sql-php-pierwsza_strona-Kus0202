@@ -14,7 +14,7 @@
     <a href="funkcje_agregujące.php">Funkcje agregujące</a>
     <a href="data_czas.php">Data i Czas</a>
     <a href="formularz.html">Formularz</a>
-    <a href="DaneDoBazy.html">Dane Do Bazy</a>
+    <a href="DaneDoBazy.php">Dane Do Bazy</a>
    <?php
 require_once("connect.php");
 
