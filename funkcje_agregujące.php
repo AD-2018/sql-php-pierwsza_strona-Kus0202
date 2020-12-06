@@ -8,16 +8,14 @@
 </head>
 <body>
     <h1>Mateusz Kuś nr.20</h1>
-    <nav>
-        <ul>
-            <li><a href="https://https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202"</a></li>
-		<li><a href="index.php">Strona Główna</a></li>
-                <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
-                <li><a href="data_czas.php">Data i Czas</a></li>
-                <li><a href="formularz.html">Formularz</a></li>
-                <li><a href="DaneDoBazy.php">Dane Do Bazy</a></li>
-</ul>
-</nav>
+    
+           <a href="https://https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202"</a>
+		<a href="index.php">Strona Główna</a>
+                <a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
+                <a href="data_czas.php">Data i Czas</a>
+                <a href="formularz.html">Formularz</a>
+               <a href="DaneDoBazy.php">Dane Do Bazy</a>
+
     </body>
 </html>
 <?php
