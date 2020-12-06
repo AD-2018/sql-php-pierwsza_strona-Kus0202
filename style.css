@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: black;
 }
   table {
     border-collapse: collapse;
@@ -36,13 +36,13 @@ body {
     text-align: center;
   }
   tr:nth-child(even) {
-      background-color:gray;
+      background-color:orange;
 }
   th {
-    background-color:black;
+    background-color:orange;
     color: white;
   }
   h1{
-    color: black;
+    color: white;
   }
 
