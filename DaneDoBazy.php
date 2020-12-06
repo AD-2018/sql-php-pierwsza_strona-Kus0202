@@ -19,7 +19,6 @@
                 <li><a href="DaneDoBazy.php">Dane Do Bazy</a></li>
 </ul>
 </nav>
-  </div>
 <h1>Dodawanie Pracownika</h1>
 <form action="insert.php" method="POST">
 
