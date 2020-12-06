@@ -36,10 +36,10 @@ body {
     text-align: center;
   }
   tr:nth-child(even) {
-      background-color:orange;
+      background-color:red;
 }
   th {
-    background-color:orange;
+    background-color:white;
     color: white;
   }
   h1{
