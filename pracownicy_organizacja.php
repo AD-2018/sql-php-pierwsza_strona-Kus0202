@@ -9,7 +9,6 @@
 <body>
     <h1>Mateusz Kuś Nr.20</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a>
-    <br>
     <a href="index.php">Strona Główna</a>
     <a href="funkcje_agregujące.php">Funkcje Agregujące</a>
     <a href="data_czas">Data i Czas</a>
