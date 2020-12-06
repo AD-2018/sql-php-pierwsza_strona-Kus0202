@@ -1,5 +1,6 @@
 body {
-    background-color: gray;
+    background-color: lightgray;
+  }
 
   table {
     border-collapse: collapse;
@@ -18,11 +19,11 @@ body {
      text-decoration: none;
      padding: 1em;
      margin: 1em;
-     background-color: #FF8C00;
+     background-color: #ff25FD;
      border-radius: 0.8em;
  }
  li>a:hover{
-     background-color: #FFD700;
+     background-color: #ff2f2f;
      transition-duration: 1s;
  }
 
@@ -39,8 +40,8 @@ body {
       background-color: yellow;
 }
   th {
-    background-color:yellow;
-    color: black;
+    background-color:black ;
+    color: white;
   }
   h1{
     color: lightcyan;
