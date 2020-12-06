@@ -1,5 +1,5 @@
 body {
-    background-color: purple;
+    background-color: #00BFFF;
   }
 
   table {
@@ -40,10 +40,10 @@ body {
       background-color: yellow;
 }
   th {
-    background-color:black ;
-    color: white;
+    background-color:yellow;
+    color: black;
   }
   h1{
-    color: lightcyan;
+    color: black;
   }
 
