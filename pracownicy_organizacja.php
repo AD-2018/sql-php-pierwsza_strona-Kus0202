@@ -16,7 +16,8 @@
 			<li><a href="data_czas">Data i Czas</a></li>
 			<li><a href="formularz.html">Formularz</a></li>
 			<li><a href="DaneDobazy.php">DaneDoBazy</a></li>
-	
+			</ul>
+		</nav>
 </body>
 </html>
 <?php
