@@ -18,11 +18,11 @@ body {
      text-decoration: none;
      padding: 1em;
      margin: 1em;
-     background-color: #ADFF2F;
+     background-color: #DC143C;
      border-radius: 0.8em;
  }
  li>a:hover{
-     background-color: #32CD32;
+     background-color: #556B2F;
      transition-duration: 1s;
  }
 
