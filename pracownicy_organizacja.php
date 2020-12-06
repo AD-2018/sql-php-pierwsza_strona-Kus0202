@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Mateusz Kuś Nr.20</h1>
+	<h1>Mateusz Kuś nr.20</h1>
 	<nav>
 		<ul>
 			<li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li>
