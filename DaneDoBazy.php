@@ -6,19 +6,6 @@
   <title>Dodawanie i Usuwanie</title>
 </head>
 <body>
-	<h1>Mateusz Kuś nr.20</h1>
-    <nav>
-        <ul>
-            <li><a href="https://https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202"</a></li>
-                <br>
-		<li><a href="index.php">Strona Główna</a></li>
-                <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
-                <li><a href="funkcje_agregujące.php">Funkcję Agregujące</a></li>
-                <li><a href="data_czas.php">Data i Czas</a></li>
-                <li><a href="formularz.html">Formularz</a></li>
-                <li><a href="DaneDoBazy.php">Dane Do Bazy</a></li>
-</ul>
-</nav>
 <h1>Dodawanie Pracownika</h1>
 <form action="insert.php" method="POST">
 
