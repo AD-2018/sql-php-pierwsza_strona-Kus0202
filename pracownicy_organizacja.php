@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<ul>
+		<nav>
     <h1>Mateusz Kuś Nr.20</h1>
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a>
-    <a href="index.php">Strona Główna</a>
-    <a href="funkcje_agregujące.php">Funkcje Agregujące</a>
-    <a href="data_czas">Data i Czas</a>
-    <a href="formularz.html">Formularz</a>
-    <a href="DaneDobazy.php">DaneDoBazy</a>
+			<li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li>
+			<li><a href="index.php">Strona Główna</a></li>
+			<li><a href="funkcje_agregujące.php">Funkcje Agregujące</a></li>
+			<li><a href="data_czas">Data i Czas</a></li>
+			<li><a href="formularz.html">Formularz</a></li>
+			<li><a href="DaneDobazy.php">DaneDoBazy</a></li>
 	
 </body>
 </html>
