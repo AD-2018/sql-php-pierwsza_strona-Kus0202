@@ -8,8 +8,8 @@
 </head>
 <body>
 	<h1>Mateusz Kuś Nr.20</h1>
-	<ul>
-		<nav>
+	<nav>
+		<ul>
 			<li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li>
 			<li><a href="index.php">Strona Główna</a></li>
 			<li><a href="funkcje_agregujące.php">Funkcje Agregujące</a></li>
