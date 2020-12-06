@@ -10,7 +10,7 @@
     <h1>Mateusz Kuś nr.20</h1>
     <nav>
         <ul>
-             <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202%22%3Egithub%22%3E</a></li> 
+             <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202"</a></li> 
                 <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
                 <li><a href="funkcje_agregujące.php">Funkcję Agregujące</a></li>
                 <li><a href="data_czas.php">Data i Czas</a></li>
