@@ -5,17 +5,15 @@
 </head>
 <body>
   <h1>Mateusz Kuś nr.20</h1>
-    <nav>
-        <ul>
-            <li><a href="https://https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202"</a></li>
+    
+            <a href="https://https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202"</a>
                 <br>
-		<li><a href="index.php">Strona Główna</a></li>
-                <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
-                <li><a href="funkcje_agregujące.php">Funkcję Agregujące</a></li>
-                <li><a href="formularz.html">Formularz</a></li>
-                <li><a href="DaneDoBazy.php">Dane Do Bazy</a></li>
-</ul>
-</nav>
+		<a href="index.php">Strona Główna</a>
+                <a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
+                <a href="funkcje_agregujące.php">Funkcję Agregujące</a>
+                <a href="formularz.html">Formularz</a>
+                <a href="DaneDoBazy.php">Dane Do Bazy</a>
+
 <?php
   $servername = "mysql-mateusz.alwaysdata.net";
 $username = "mateusz";
