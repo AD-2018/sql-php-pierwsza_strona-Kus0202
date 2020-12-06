@@ -11,7 +11,8 @@
    
     
             <a href="https://https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202</a>
-                <br>
+                <br> 
+		     
 		<a href="index.php">Strona Główna</a>
                 <a href="funkcje_agregujące.php">Funkcję Agregujące</a>
                 <a href="data_czas.php">Data i Czas</a>
