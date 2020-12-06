@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-color: purple;
   }
 
   table {
@@ -19,11 +19,11 @@ body {
      text-decoration: none;
      padding: 1em;
      margin: 1em;
-     background-color: #ff25FD;
+     background-color: #FF8C00;
      border-radius: 0.8em;
  }
  li>a:hover{
-     background-color: #ff2f2f;
+     background-color: #FFD700;
      transition-duration: 1s;
  }
 
