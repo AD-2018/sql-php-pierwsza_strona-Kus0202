@@ -46,39 +46,23 @@ $password = "Strona123";
 $dbname = "mateusz_kus";    
 
 <?php
-require_once("connect.php");
-$sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
+require "connect.php";
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-      }
-
-    $result = mysqli_query($conn, $sql);
-    if ( $result) {
-         echo "<br>";
-     } else {
-       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-     }
-
-    echo("<h1>Tabela Pracowników:</h1>");
-
-    echo("<table border='1'>");
-    echo("<th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Nazwa dzialu</th><th>Usuń Pracownika</th>");
-        while($row = mysqli_fetch_assoc($result)) {
-            echo('<tr>');
-            echo('<td>'.$row['id_pracownicy'].'</td><td>'.$row['imie'].'</td><td>'.$row['zarobki'].'</td><td>'.$row['data_urodzenia'].'</td><td>'.$row['dzial'].'</td><td>'.$row['nazwa_dzial'].'</td>'.
-	     '<td>
-	    
-	     <form action="delete.php" method="POST">
-  		<input name="id" value="'.$row['id_pracownicy'].'" hidden>
-   		<input type="submit" class="button_x" value="X">
-	     </form>
-	     
-	     </td>');
-        echo('</tr>');
-    }
-
-    echo('</table>');
+$conn= new mysqli($servername,$username,$password,$dbname);  
+     
+$sql ="select * from pracownicy"; 
+echo("<h3>Tabela Pracowników:</h3>"); 
+    echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
 ?>
 </body>
 </html>
