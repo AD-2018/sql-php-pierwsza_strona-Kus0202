@@ -19,7 +19,7 @@
                 <li><a href="formularz.html">Formularz</a></li>
 </ul>
 </nav>
-	                Dodawanie Pracownika<br>
+                         Dodawanie Pracownika<br>
 	                <form action="insert.php" method="POST">
 			Imię<br>
 			<input type="text" name="imie"><br>
