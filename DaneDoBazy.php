@@ -8,7 +8,7 @@
   <title>Dane do Bazy</title>
 </head>
 <body>
-	<h1>Mateusz Kuś nr.20</h1>
+	<h1>Daniel Harazim</h1>
     <nav>
         <ul>
              <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">GitHub</a></li> 
