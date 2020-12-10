@@ -18,8 +18,7 @@
                 <li><a href="DaneDoBazy.php">Dane Do Bazy</a></li>
 </ul>
 </nav>
-    </body>
-</html>
+
 
 <?php 
 require_once("connect.php");
