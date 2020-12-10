@@ -11,11 +11,11 @@
 	<h1>Mateusz Kuś nr.20</h1>
     <nav>
         <ul>
-             <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li> 
+             <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">GitHub</a></li> 
                 <li><a href="index.php">Strona Główna</a></li>
-		<li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
-                <li><a href="funkcje_agregujące.php">Funkcję Agregujące</a></li>
-                <li><a href="data_czas.php">Data i Czas</a></li>
+		<li><a href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
+                <li><a href="funkAgregujaca.php">Funkcję Agregujące</a></li>
+                <li><a href="Dtaiczas.php">Data i Czas</a></li>
                 <li><a href="formularz.html">Formularz</a></li>
 </ul>
 </nav>
@@ -56,7 +56,7 @@ echo('<td>'.$row['id_pracownicy'].'</td><td>'.$row['imie'].'</td><td>'.$row['dzi
 '<td>
 <form action="delete.php" method="POST">
 <input name="id_pracownicy" value="'.$row['id_pracownicy'].'" hidden>
-<input type="submit" value="Jeśli Klikniesz Pracownik Zniknie Na Zawsze z Bazy Danych :)">
+<input type="submit" value="Usuń pracownika
 </form>
 </td>');
   echo("</tr>"); } 
