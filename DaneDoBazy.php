@@ -1,69 +1,52 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
+  <title>Dane do bazy</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Dodawanie i Usuwanie</title>
+  <title>Dane do Bazy</title>
 </head>
 <body>
-	 <h1>Mateusz Kuś nr.20</h1>
-    <nav>
-        <ul>
-                <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li> 
-		<li><a href="index.php">Strona Główna</a></li>
-                <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
-                <li><a href="funkcje_agregujące.php">Funkcję Agregujące</a></li>
-                <li><a href="data_czas.php">Data i Czas</a></li>
-                <li><a href="formularz.html">Formularz</a></li>
-</ul>
-</nav>
-<h1>Dodawanie Pracownika</h1>
-<form action="insert.php" method="POST">
-
-			<label>Imię:</label>	
+	Dodawanie Pracownika<br>
+	<form action="insert.php" method="POST">
+			Imię<br>
 			<input type="text" name="imie"><br>
-	
-	                <label>Dział:</label>
+			Dział<br>
 			<input type="number" name="dzial"></br>
-	
-			<label>Zarobki:</label>
+			Zarobki<br>
 			<input type="number" name="zarobki"></br>
-	
-	                <label>Data Urodzenia:</label>
+			Data Urodzenia<br>
 			<input type="date" name="data_urodzenia"></br>
-	                <input type="submit" value="Dodaj Pracownika">
-</form>
-<h2>Usuwanie Pracownika</h2>
+			<input type="submit" value="Dodaj Pracownika"><br>
+	</form>
+<br>
+<br>
+Usuwanie Pracownika<br>
 <form action="delete.php" method="POST">
-	<label>Podaj ID Pracownika:</label>
-	<input type="number" name="id_pracownicy"<br>
-   <input type="submit" value="Usuń Pracownika">
+	ID<br>
+   <input type="number" name="id_pracownicy"></br>
+   <input type="submit" value="Zapisz w zmiennej $_POST['id_pracownicy']">
 </form>
 <?php
-$servername = "mysql-mateusz.alwaysdata.net"; 
-$username = "mateusz"; 
-$password = "Strona123"; 
-$dbname = "mateusz_kus";    
+require "connect.php";
 
-<?php
-require_once("connect.php"); 
+$conn= new mysqli($servername,$username,$password,$dbname);  
+     
 $sql ="select * from pracownicy"; 
 echo("<h3>Tabela Pracowników:</h3>"); 
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th><th>Usuń Pracownika</th></tr>"); 
-while($row=mysqli_fetch_assoc($result)){    
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
-echo('<td>'.$row['id_pracownicy'].'</td><td>'.$row['imie'].'</td><td>'.$row['dzial'].'</td><td>'.$row['zarobki'].'</td><td>'.$row['data_urodzenia'].'</td>'.
-'<td>
-<form action="delete.php" method="POST">
-<input name="id_pracownicy" value="'.$row['id_pracownicy'].'" hidden>
-<input type="submit" value="usuń pracownika">
-</form>
-</td>');
+  echo("<tr>");     
+  echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");     
+  echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
 ?>
 </body>
 </html>
+
