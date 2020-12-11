@@ -24,6 +24,7 @@
 require_once("connect.php");
     
 $sql ="select sum(zarobki) from pracownicy"; 
+    echo("<h1>Funkcję Agregujące</h1>"); 
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
