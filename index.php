@@ -16,6 +16,7 @@
                 <li><a href="data_czas.php">Data i Czas</a></li>
                 <li><a href="formularz.html">Formularz</a></li>
                 <li><a href="DaneDoBazy.php">Dane Do Bazy</a></li>
+                <li><a href="ksiazki.php">Książki</a></li>
                 
 </ul>
 </nav>
