@@ -21,13 +21,13 @@
 </nav>
                          Dodawanie Pracownika<br>
 	                <form action="insert.php" method="POST">
-			Imię<br>
+			Imię:<br>
 			<input type="text" name="imie"><br>
-			Dział<br>
+			Dział:<br>
 			<input type="number" name="dzial"></br>
-			Zarobki<br>
+			Zarobki:<br>
 			<input type="number" name="zarobki"></br>
-			Data Urodzenia<br>
+			Data Urodzenia:<br>
 			<input type="date" name="data_urodzenia"></br>
 			<input type="submit" value="Dodaj Pracownika"><br>
 	</form>
