@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="style.css">
-  <title>Książki</title>
+  <title>Books</title>
 </head>
 <body>
 	<h1>Mateusz Kuś nr.20</h1>
