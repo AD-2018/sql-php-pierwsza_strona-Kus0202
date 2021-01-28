@@ -3,13 +3,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pracownicy i Organizacja</h1>
-  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">github</a>
-  
-    <div class="nav">
-      <a href="index.php">Strona Główna</a>
-  </div>
-
+    <h1>Mateusz Kuś nr.20</h1>
+    <nav>
+        <ul>
+             <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li> 
+                <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
+                <li><a href="funkcje_agregujące.php">Funkcję Agregujące</a></li>
+                <li><a href="data_czas.php">Data i Czas</a></li>
+                <li><a href="formularz.html">Formularz</a></li>
+                <li><a href="DaneDoBazy.php">Dane Do Bazy</a></li>
+                
+                
+</ul>
+</nav>
 <?php 
 require_once("connect.php");
     echo ('<h2>Nowa lista pracowników<h2>');
