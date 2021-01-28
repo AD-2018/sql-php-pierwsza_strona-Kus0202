@@ -18,7 +18,7 @@
 </nav>
 <?php 
 require_once("connect.php");
-    echo ('<h2>Nowa lista pracowników<h2>');
+    echo ('<h2>Lista Pracowników<h2>');
 	$sql ="select * from pracownicy";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
