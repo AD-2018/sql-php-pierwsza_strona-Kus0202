@@ -11,7 +11,7 @@
     </div>
 <?php 
 	require_once("connect.php");
-$sql = "select (biblTytul_biblAutor.id) as ID_TAB, autor, tytul, bibl_wypo from bibl_tytul,_bibl_autor,bibl_autor,bibl_tytul where bibl_autor.id=bibl_autor_id and bibl_tytul.id=biblTytul_id order by autor,ID_TAB asc";
+$sql = "select (bibl_tytul_bibl_autor.id) as ID_TAB, autor, tytul, bibl_wypo from bibl_tytul,_bibl_autor,bibl_autor,bibl_tytul where bibl_autor.id=bibl_autor_id and bibl_tytul.id=biblTytul_id order by autor,ID_TAB asc";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
