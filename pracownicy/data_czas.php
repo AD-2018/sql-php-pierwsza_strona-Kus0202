@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+  <title>Mateusz Kuś</title>
 </head>
 <body>
   <h1>Mateusz Kuś nr.20</h1>
