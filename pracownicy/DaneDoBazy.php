@@ -12,12 +12,12 @@
     <nav>
         <ul>
              <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li> 
-                <li><a href="index.php">Strona Główna</a></li>
-		<li><a href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
-                <li><a href="pracownicy/funkcje_agregujące.php">Funkcję Agregujące</a></li>
-                <li><a href="pracownicy/data_czas.php">Data i Czas</a></li>
-                <li><a href="pracownicy/formularz.html">Formularz</a></li>
-		<li><a href="biblioteka/biblioteka.php">Biblioteka</a></li>
+                <li><a href="../index.php">Strona Główna</a></li>
+		<li><a href="../pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
+                <li><a href="../pracownicy/funkcje_agregujące.php">Funkcję Agregujące</a></li>
+                <li><a href="../pracownicy/data_czas.php">Data i Czas</a></li>
+                <li><a href="../pracownicy/formularz.html">Formularz</a></li>
+		<li><a href="../biblioteka/biblioteka.php">Biblioteka</a></li>
 </ul>
 </nav>
                          Dodawanie Pracownika<br>
