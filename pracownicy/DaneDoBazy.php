@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dane Do Bazy</title>
+  <title>Mateusz Kuś</title>
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Mateusz Kuś</title>
+  
 </head>
 <body>
 	<h1>Mateusz Kuś nr.20</h1>
