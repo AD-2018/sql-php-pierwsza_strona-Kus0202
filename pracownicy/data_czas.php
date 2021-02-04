@@ -13,6 +13,7 @@
                 <li><a href="pracownicy/funkcje_agregujące.php">Funkcję Agregujące</a></li>
                 <li><a href="inne/formularz.html">Formularz</a></li>
                 <li><a href="pracownicy/DaneDoBazy.php">Dane Do Bazy</a></li>
+          <li><a href="biblioteka/biblioteka.php">Biblioteka</a></li>
 </ul>
 </nav>
 
