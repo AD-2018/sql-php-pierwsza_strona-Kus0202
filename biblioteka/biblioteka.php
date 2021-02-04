@@ -20,7 +20,7 @@
 </nav>
 <?php 
 	require_once("connect.php");
-$sql = "select (bibl_tytul_bibl_utor.id) as ID_TAB, autor, tytul, bibl_wypo from bibl_tytul_bibl_autor,bibl_autor,bibl_tytul where bibl_autor.id=bibl_autor_id and bibl_tytul.id=bibl_tytul_id order by autor,ID_TAB asc";
+$sql = "select (bibl_tytul_bibl_autor.id) as ID_TAB, autor, tytul, bibl_wyp from bibl_tytul_bibl_autor,bibl_autor,bibl_tytul where bibl_autor.id=bibl_autor_id and bibl_tytul.id=bibl_tytul_id order by autor,ID_TAB asc";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
