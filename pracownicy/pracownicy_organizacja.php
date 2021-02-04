@@ -20,7 +20,8 @@
 </nav>
 <?php 
 require_once("connect.php");
-    echo ('<h2>Lista Pracowników<h2>');
+	echo ('<h2>Pracownicy i Organizacja</h2>');
+    echo ('<h3>Lista Pracowników<h3>');
 	$sql ="select * from pracownicy";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -36,7 +37,7 @@ echo('<select name="pracownik">');
 echo('</select>');
 echo ('<br>');
 $sql = "select * from pracownicy, organizacja where id_org=dzial"; 
-echo("<h3>Pracownicy z nazwą działu</h3>"); 
+echo("<h4>Pracownicy z nazwą działu</h4>"); 
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
