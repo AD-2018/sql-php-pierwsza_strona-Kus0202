@@ -17,6 +17,7 @@
                 <li><a href="pracownicy/funkcje_agregujące.php">Funkcję Agregujące</a></li>
                 <li><a href="pracownicy/data_czas.php">Data i Czas</a></li>
                 <li><a href="pracownicy/formularz.html">Formularz</a></li>
+		<li><a href="biblioteka/biblioteka.php">Biblioteka</a></li>
 </ul>
 </nav>
                          Dodawanie Pracownika<br>
