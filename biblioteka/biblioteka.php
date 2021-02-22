@@ -19,7 +19,7 @@
 <?php
 require_once ("../connect.php");
 
-$sql = "SELECT autor FROM bibl_autor, bibl_book, bibl_tytul, bibl_user, bibl_wyp";
+$sql = "SELECT autor FROM biblioteka";
 echo ("<h3>Autorzy</h3>");
 echo ("<li>".$sql);
   $result = mysqli_query($conn, $sql);
@@ -37,7 +37,7 @@ echo('<select name="Autor">');
     }
 echo('</select>');
 
-$sql = "SELECT tytul FROM biblioteka2";
+$sql = "SELECT tytul FROM biblioteka";
 echo("<h3>Książki</h3>");
 echo("<li>".$sql."<br><br>");
 
@@ -59,7 +59,7 @@ echo('</select>');
 
 echo ('</table>');
 	
-$sql = "SELECT autor, tytul FROM biblioteka2";
+$sql = "SELECT autor, tytul FROM biblioteka";
 echo("<h3>AUTORZY I KSIĄŻKI</h3>");
 echo("<li>".$sql."<br><br>");
 
