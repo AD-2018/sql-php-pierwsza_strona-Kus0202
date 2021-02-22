@@ -19,7 +19,7 @@
 <?php
 require_once ("../connect.php");
 
-$sql = "SELECT autor FROM biblioteka2";
+$sql = "SELECT autor FROM bibl_autor, bibl_book, bibl_tytul, bibl_user, bibl_wyp";
 echo ("<h3>Autorzy</h3>");
 echo ("<li>".$sql);
   $result = mysqli_query($conn, $sql);
