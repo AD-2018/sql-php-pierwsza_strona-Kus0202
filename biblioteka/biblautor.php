@@ -1,5 +1,5 @@
 <?php
-echo("bib_autor.php");
+echo("bibl_autor.php");
 echo "<li>".$_POST['autor'];
 
 require_once("connect.php");
