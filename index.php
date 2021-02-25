@@ -25,8 +25,10 @@
 
   
 <?php
-    $hostname = $_SERVER['HTTP_HOST'];
-    echo("<li> hostname : ".$hostname);
+   
+$hostname = $_SERVER['HTTP_HOST'];
+echo("<li> hostname : ".$hostname);
+?>
 require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org = dzial";
 
