@@ -27,7 +27,7 @@
     <div>
         <h3>Dodaj Autora</h3>
         <form action="/Biblioteka/new_biblautor.php" method="POST">
-    	<p>AUTOR:</p>
+    	<p>Autor:</p>
         <input type="text" name="autor"></br>
         <input type="submit" value="Dodaj Autora">
         </form>
