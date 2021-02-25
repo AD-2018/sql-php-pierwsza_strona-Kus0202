@@ -24,7 +24,7 @@ echo ("<h3>Autorzy</h3>");
 echo ("<li>".$sql);
   $result = mysqli_query($conn, $sql);
     if ( $result) {
-        echo "<li>ok</br>";
+       
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -43,7 +43,7 @@ echo("<li>".$sql."<br><br>");
 
 $result = mysqli_query($conn, $sql);
      if ( $result) {
-        echo "<li>ok</br>";
+        
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -65,7 +65,7 @@ echo("<li>".$sql."<br><br>");
 
 $result = mysqli_query($conn, $sql);
      if ( $result) {
-        echo "<li>ok";
+        
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
