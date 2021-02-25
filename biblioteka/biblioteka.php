@@ -40,7 +40,6 @@ echo("<h3>Książki</h3>");
 echo("<li>".$sql."<br><br>");
 $result = mysqli_query($conn, $sql);
      if ( $result) {
-        echo "<li>ok</br>";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -59,7 +58,6 @@ echo("<h3>Autorzy i Książki</h3>");
 echo("<li>".$sql."<br><br>");
 $result = mysqli_query($conn, $sql);
      if ( $result) {
-        echo "<li>ok";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -79,7 +77,6 @@ echo("<h3>TYTUŁ</h3>");
 echo("<li>".$sql."<br><br>");
 $result = mysqli_query($conn, $sql);
      if ( $result) {
-        echo "<li>ok";
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
