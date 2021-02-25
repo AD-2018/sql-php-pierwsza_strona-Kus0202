@@ -38,7 +38,6 @@ echo('<select name="Autor">');
 echo('</select>');
 
 $sql = "SELECT tytul FROM bibl_tytul";
-echo('<select name="Tytuł">');
 echo("<h3>Książki</h3>");
 echo("<li>".$sql."<br><br>");
 
