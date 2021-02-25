@@ -14,82 +14,104 @@
                 <li><a href="../pracownicy/data_czas.php">Data i Czas</a></li>
                 <li><a href="../inne/formularz.html">Formularz</a></li>
                 <li><a href="../pracownicy/DaneDoBazy.php">Dane Do Bazy</a></li>
+</div>
+<div class="flexbox-containter">
+    <div>
+        <h3>DODAJ TYTUL</h3>
+        <form action="/Biblioteka/new_tytul.php" method="POST">
+    	<p>TYTUL:</p>
+        <input type="text" name="tytul"></br>
+        <input type="submit" value="dodaj tytul">
+        </form>
+    </div>
+    <div>
+        <h3>DODAJ AUTORA</h3>
+        <form action="/Biblioteka/new_autor.php" method="POST">
+    	<p>AUTOR:</p>
+        <input type="text" name="autor"></br>
+        <input type="submit" value="dodaj autora">
+        </form>
+    </div>
+</div>
 
+<?php   
+$servername = "mysql-mateusz.alwaysdata.net";
+    $username = "mateusz";
+    $password = "Strona123";
+    $dbname = "mateusz_kus";
 
-
-<?php
-require_once ("../connect.php");
-$sql = "SELECT autor FROM bibl_autor";
-echo ("<h3>Autorzy</h3>");
-echo ("<li>".$sql);
-  $result = mysqli_query($conn, $sql);
-    if ( $result) {
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-echo('<label for="bibl_autor">Wybierz Autora: </label>');	
-echo('<select name="Autor">');
-    while($row=mysqli_fetch_assoc($result)){
-        echo('<option value="'.$row['id_autor'].'">');
-        echo($row['autor']);
-        echo("</option>"); 
-    }
-echo('</select>');
-$sql = "SELECT tytul FROM bibl_tytul";
-echo("<h3>Książki</h3>");
-echo("<li>".$sql."<br><br>");
+$conn = new mysqli ($servername, $username, $password, $dbname);
+	echo("<div class='listy-Biblioteka'>");
+	echo('<h2>Listy:<h2>');
+	echo('<h2>lista NR 1<h2>');
+	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
 $result = mysqli_query($conn, $sql);
-     if ( $result) {
+if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-echo('<label for="bibl_tytul">Wybierz Tytuł: </label>');	
-echo('<select name="tytul">');
-    while($row=mysqli_fetch_assoc($result)){
-        echo('<option value="'.$row['id_tytul'].'">');
-        echo($row['tytul']);
-        echo("</option>"); 
-    }
-echo('</select>');
-echo ('</table>');
-	
-$sql = "SELECT autor, tytul FROM bibl_autor,bibl_tytul";
-echo("<h3>Autorzy i Książki</h3>");
-echo("<li>".$sql."<br><br>");
-$result = mysqli_query($conn, $sql);
-     if ( $result) {
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-echo('<table border="1" class="tabela">');
-echo ("<tr><th>autor</th><th>tytul</th></tr>");
-while($row = mysqli_fetch_assoc($result)) {
-    echo ('<tr>');
-    echo ("<td>".$row['autor']."</td><td>".$row['tytul']."</td>");
-    echo ('</tr>');
-}
-echo ('</table>');
+echo('<select name="bibl_autor">');
+	while($row = mysqli_fetch_assoc($result)) {
+          echo '<option value="'.$row['id'].'">';
+	    echo($row['autor'].', '.$row['tytul']);
+ 	    echo "</option>";
+	};
 	echo('</select>');
-echo ('</table>');
-	
-$sql = "SELECT id,Tytul FROM bibl_tytul";
-echo("<h3>Tytuł</h3>");
-echo("<li>".$sql."<br><br>");
+    echo("</div>");
+
+    echo("<div class='tabelki'>");
+        echo("<div class='wnetrze'>");
+$sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
-     if ( $result) {
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-echo('<table border="1" class="tabela">');
-echo ("<tr><th>autor</th><th>tytul</th></tr>");
-while($row = mysqli_fetch_assoc($result)) {
-    echo ('<tr>');
-    echo ("<td>".$row['autor']."</td><td>".$row['tytul']."</td>");
-    echo ('</tr>');
-}
-echo ('</table>');
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>Autor</th><th>USUN</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>'.
+		
+	'<td>
+	
+	 	 <form action="del_autor.php" method="POST">
+          		<input type="text" name="id_autor" value="'.$row["id_autor"].'" hidden>
+          		<input type="submit" value="Usun">
+    	  	</form>
+	</td>');
+	        echo ('</tr>');
+  	}echo ('</table>');
+      echo("</div>");
+      echo("<div class='wnetrze'>");
+        $sql = "SELECT * FROM bibl_tytul";
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>tytul</th><th>USUN</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>'.
+		
+	'<td>
+	
+	 	 <form action="del_book.php" method="POST">
+          		<input type="text" name="id_tytul" value="'.$row["id_tytul"].'" hidden>
+          		<input type="submit" value="Usun">
+    	  	</form>
+	</td>');
+	        echo ('</tr>');
+  	}echo ('</table>');
+      echo("</div>");
+      echo("<div class='wnetrze'>");
+echo("<h3> CALOSC </h3>");
+$sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>wyporzyczenia</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["ID_TAB"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+        echo("</div>");
+echo("</div>");
 ?>
-	</div>
-	</div>
 </body>
 </html>
