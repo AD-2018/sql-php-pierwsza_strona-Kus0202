@@ -1,5 +1,5 @@
 <?php
-echo("jestes w new_autor.php <br>");
+echo("jestes w new_biblautor.php <br>");
 echo "<li>". $_POST['autor'];
 
 $servername = "mysql-mateusz.alwaysdata.net";
