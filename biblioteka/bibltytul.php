@@ -1,5 +1,5 @@
 <?php
-echo("bibtytul.php");
+echo("bibl_tytul.php");
 echo "<li>".$_POST['tytul'];
 
 require_once("/connect.php");
