@@ -38,6 +38,7 @@ echo('<select name="Autor">');
 echo('</select>');
 
 $sql = "SELECT tytul FROM bibl_tytul";
+echo('<select name="Tytuł">');
 echo("<h3>Książki</h3>");
 echo("<li>".$sql."<br><br>");
 
@@ -49,7 +50,7 @@ $result = mysqli_query($conn, $sql);
     }
 
 echo('<label for="bibl_tytul">Wybierz Tytuł: </label>');	
-echo('<select name="tytul">');
+echo('<select name="Tytuł">');
     while($row=mysqli_fetch_assoc($result)){
         echo('<option value="'.$row['id_tytul'].'">');
         echo($row['tytul']);
