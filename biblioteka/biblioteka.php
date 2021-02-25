@@ -18,18 +18,18 @@
 <div class="flexbox-containter">
     <div>
         <h3>DODAJ TYTUL</h3>
-        <form action="/Biblioteka/new_tytul.php" method="POST">
+        <form action="/Biblioteka/bibl_tytul.php" method="POST">
     	<p>TYTUL:</p>
         <input type="text" name="tytul"></br>
-        <input type="submit" value="dodaj tytul">
+        <input type="submit" value="Dodaj Tytuł">
         </form>
     </div>
     <div>
         <h3>DODAJ AUTORA</h3>
-        <form action="/Biblioteka/new_autor.php" method="POST">
+        <form action="/Biblioteka/bibl_autor.php" method="POST">
     	<p>AUTOR:</p>
         <input type="text" name="autor"></br>
-        <input type="submit" value="dodaj autora">
+        <input type="submit" value="Dodaj Autora">
         </form>
     </div>
 </div>
@@ -64,7 +64,7 @@ echo('<select name="bibl_autor">');
 $sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th><th>USUN</th></tr>");
+    echo ("<tr><th>ID</th><th>Autor</th><th>Usuń Autora</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>'.
@@ -73,7 +73,7 @@ $result = mysqli_query($conn, $sql);
 	
 	 	 <form action="del_autor.php" method="POST">
           		<input type="text" name="id_autor" value="'.$row["id_autor"].'" hidden>
-          		<input type="submit" value="Usun">
+          		<input type="submit" value="Usuń">
     	  	</form>
 	</td>');
 	        echo ('</tr>');
@@ -83,7 +83,7 @@ $result = mysqli_query($conn, $sql);
         $sql = "SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>tytul</th><th>USUN</th></tr>");
+    echo ("<tr><th>ID</th><th>tytul</th><th>Usuń</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>'.
@@ -92,7 +92,7 @@ $result = mysqli_query($conn, $sql);
 	
 	 	 <form action="del_book.php" method="POST">
           		<input type="text" name="id_tytul" value="'.$row["id_tytul"].'" hidden>
-          		<input type="submit" value="Usun">
+          		<input type="submit" value="Usuń">
     	  	</form>
 	</td>');
 	        echo ('</tr>');
@@ -104,7 +104,7 @@ $sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>wyporzyczenia</th></tr>");
+    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>Wypożyczenia</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["ID_TAB"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
