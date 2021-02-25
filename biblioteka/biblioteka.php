@@ -38,6 +38,7 @@ echo('<select name="Autor">');
 echo('</select>');
 
 $sql = "SELECT tytul FROM bibl_tytul";
+echo ("<h3>Tytuł</h3>");
 echo("<h3>Książki</h3>");
 echo("<li>".$sql."<br><br>");
 
@@ -60,6 +61,7 @@ echo('</select>');
 echo ('</table>');
 	
 $sql = "SELECT autor, tytul FROM bibl_autor, bibl_tytul";
+echo('<select name="Autorzy i Książki">');
 echo("<h3>AUTORZY I KSIĄŻKI</h3>");
 echo("<li>".$sql."<br><br>");
 
