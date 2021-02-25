@@ -19,7 +19,7 @@
     <div>
         <h3>Dodaj Tytuł</h3>
         <form action="/Biblioteka/new_bibltytul.php" method="POST">
-    	<p>TYTUL:</p>
+    	<p>Tytuł:</p>
         <input type="text" name="tytul"></br>
         <input type="submit" value="Dodaj Tytuł">
         </form>
