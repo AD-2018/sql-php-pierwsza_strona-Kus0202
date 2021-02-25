@@ -17,16 +17,16 @@
 </div>
 <div class="flexbox-containter">
     <div>
-        <h3>DODAJ TYTUL</h3>
-        <form action="/Biblioteka/bibl_tytul.php" method="POST">
+        <h3>Dodaj Tytuł</h3>
+        <form action="/Biblioteka/new_bibltytul.php" method="POST">
     	<p>TYTUL:</p>
         <input type="text" name="tytul"></br>
         <input type="submit" value="Dodaj Tytuł">
         </form>
     </div>
     <div>
-        <h3>DODAJ AUTORA</h3>
-        <form action="/Biblioteka/bibl_autor.php" method="POST">
+        <h3>Dodaj Autora</h3>
+        <form action="/Biblioteka/new_biblautor.php" method="POST">
     	<p>AUTOR:</p>
         <input type="text" name="autor"></br>
         <input type="submit" value="Dodaj Autora">
@@ -43,7 +43,7 @@ $servername = "mysql-mateusz.alwaysdata.net";
 $conn = new mysqli ($servername, $username, $password, $dbname);
 	echo("<div class='listy-Biblioteka'>");
 	echo('<h2>Listy:<h2>');
-	echo('<h2>lista NR 1<h2>');
+	echo('<h2>Lista<h2>');
 	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
@@ -71,7 +71,7 @@ $result = mysqli_query($conn, $sql);
 		
 	'<td>
 	
-	 	 <form action="del_autor.php" method="POST">
+	 	 <form action="del_biblautor.php" method="POST">
           		<input type="text" name="id_autor" value="'.$row["id_autor"].'" hidden>
           		<input type="submit" value="Usuń">
     	  	</form>
@@ -90,7 +90,7 @@ $result = mysqli_query($conn, $sql);
 		
 	'<td>
 	
-	 	 <form action="del_book.php" method="POST">
+	 	 <form action="del_bibltytul.php" method="POST">
           		<input type="text" name="id_tytul" value="'.$row["id_tytul"].'" hidden>
           		<input type="submit" value="Usuń">
     	  	</form>
@@ -99,7 +99,6 @@ $result = mysqli_query($conn, $sql);
   	}echo ('</table>');
       echo("</div>");
       echo("<div class='wnetrze'>");
-echo("<h3> CALOSC </h3>");
 $sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
