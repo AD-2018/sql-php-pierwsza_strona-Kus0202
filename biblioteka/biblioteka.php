@@ -53,7 +53,7 @@ echo('<select name="tytul">');
 echo('</select>');
 echo ('</table>');
 	
-$sql = "SELECT autor, tytul FROM bibl_autor, bibl_tytul";
+$sql = "SELECT autor, tytul FROM bibl_autor,bibl_tytul";
 echo("<h3>Autorzy i Książki</h3>");
 echo("<li>".$sql."<br><br>");
 $result = mysqli_query($conn, $sql);
@@ -73,7 +73,7 @@ echo ('</table>');
 echo ('</table>');
 	
 $sql = "SELECT id,Tytul FROM bibl_tytul";
-echo("<h3>TYTUŁ</h3>");
+echo("<h3>Tytuł</h3>");
 echo("<li>".$sql."<br><br>");
 $result = mysqli_query($conn, $sql);
      if ( $result) {
