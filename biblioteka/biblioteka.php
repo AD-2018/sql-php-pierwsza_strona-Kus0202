@@ -42,7 +42,6 @@ $servername = "mysql-mateusz.alwaysdata.net";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
 	echo("<div class='listy-Biblioteka'>");
-	echo('<h2>Listy:<h2>');
 	echo('<h2>Lista<h2>');
 	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
 $result = mysqli_query($conn, $sql);
@@ -83,7 +82,7 @@ $result = mysqli_query($conn, $sql);
         $sql = "SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>tytul</th><th>Usuń</th></tr>");
+    echo ("<tr><th>ID</th><th>Tytuł</th><th>Usuń Tytuł</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>'.
@@ -103,7 +102,7 @@ $sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>Wypożyczenia</th></tr>");
+    echo ("<tr><th>ID</th><th>Autor</th><th>Książka</th><th>Wypożyczenia</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["ID_TAB"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
