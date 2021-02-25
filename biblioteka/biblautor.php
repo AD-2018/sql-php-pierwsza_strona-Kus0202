@@ -5,7 +5,7 @@ echo "<li>".$_POST['autor'];
 
 require_once("connect.php");
 
-$sql = "INSERT INTO biblioteka2 (id_autora, autor) 
+$sql = "INSERT INTO bibl_autor (id_autora, autor) 
        VALUES (null, '".$_POST['autor']."')";
 
 if ($conn->query($sql) === TRUE) {
