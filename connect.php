@@ -1,12 +1,14 @@
 <?php
-    $servername = "mysql-mateusz.alwaysdata.net";
-    $username = "mateusz";
-    $password = "Strona123";
-    $dbname = "mateusz_kus";
+$servername = $_SERVER['servername'];
+$username = $_SERVER['username'];
+$password = $_SERVER['password'];
+$dbname = $_SERVER['dbname']; 
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection (łącze się z moją bazą danych)
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    if ($conn->connect_error) {
-        die("Connection failed: " .$conn->connect_error);
-    };
+// Check connection (sprawdzam połączenie z bazą danych)
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 ?>
