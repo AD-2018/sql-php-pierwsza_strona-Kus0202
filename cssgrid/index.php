@@ -10,7 +10,7 @@
 <h1>Mateusz Kuś</h1>
 </div>
     <div class = "nav">
-      
+      <a class="panel" href="/cssgrid/Pierwsza Stronka/grid.php">Pierwsza Stronka</a>
         
     </div>
     </body>
