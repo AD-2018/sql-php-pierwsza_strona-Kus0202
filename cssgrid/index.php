@@ -14,6 +14,10 @@
 </div>
     <div class = "nav">
       <a class="panel" href="/cssgrid/Pierwsza Stronka/grid.php">Pierwsza Stronka</a>
+        <a class="panel" href="/cssgrid/Druga Stronka/grid.php">Druga Stronka</a>
+        <a class="panel" href="/cssgrid/Trzecia Stronka/grid.php">Trzecia Stronka</a>
+        <a class="panel" href="/cssgrid/Czwarta Stronka/grid.php">Czwarta Stronka</a>
+        <a class="panel" href="/cssgrid/Piąta Stronka/grid.php">Piąta Stronka</a>
         
     </div>
     </body>
