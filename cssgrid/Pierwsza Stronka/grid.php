@@ -16,19 +16,19 @@
 <body>
 <div class="container">
     <header>
-        <h1>Wprowadzenie Do Grid'a </h1>
+        1
     </header>
     <nav>
-    Pierwsza Stronka
-    </nav>
+    2
+	</nav>
     <main>
-    Druga Stronka
+   3
     </main>
     <aside>
-    Trzecia Stronka
+    4
     </aside>
     <footer>
-    Czwarta Stronka
+    5
     </footer>
    </div>
 </body>
