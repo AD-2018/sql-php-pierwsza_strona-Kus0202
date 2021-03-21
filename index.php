@@ -17,7 +17,7 @@
                 <li><a href="inne/formularz.html">Formularz</a></li>
                 <li><a href="pracownicy/DaneDoBazy.php">Dane Do Bazy</a></li>
             <li><a href="biblioteka/biblioteka.php">Biblioteka</a></li>
-            <li><a href="cssgrid/grid.html">Grid</a></li>
+            <li><a href="gridcss/grid.html">Grid</a></li>
           
                 
                 
