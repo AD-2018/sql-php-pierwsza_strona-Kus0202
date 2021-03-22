@@ -10,7 +10,7 @@
    <body>
        <div class="container">
         <header>
-            <h1>Strona 4</h1>
+            <h1>1</h1>
         </header>
         <nav>
         2
@@ -19,10 +19,10 @@
         3
         </main>
          <aside>
-           5
+           4
       </aside>
         <footer>
-           4
+           5
         </footer>
     </div>
 </body>
