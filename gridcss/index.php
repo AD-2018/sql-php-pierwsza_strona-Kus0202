@@ -12,11 +12,11 @@
     <div class = "nav">
         <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li> 
 		<li><a href="../index.php">Strona Główna</a></li>
-        <a class="panel" href="/cssgrid/Pierwsza Stronka/grid.html">Stronka 1</a>
-        <a class="panel" href="/cssgrid/Druga Stronka/grid.html">Stronka 2</a>
-        <a class="panel" href="/cssgrid/Trzecia Stronka/grid.html">Stronka 3</a>
-        <a class="panel" href="/cssgrid/Czwarta Stronka/grid.html">Stronka 4</a>
-        <a class="panel" href="/cssgrid/Piąta Stronka/grid.html">Stronka 5</a>
+        <a class="panel" href="/cssgrid/Pierwsza Stronka/grid.php">Stronka 1</a>
+        <a class="panel" href="/cssgrid/Druga Stronka/grid.php">Stronka 2</a>
+        <a class="panel" href="/cssgrid/Trzecia Stronka/grid.php">Stronka 3</a>
+        <a class="panel" href="/cssgrid/Czwarta Stronka/grid.php">Stronka 4</a>
+        <a class="panel" href="/cssgrid/Piąta Stronka/grid.php">Stronka 5</a>
         
     </div>
     </body>
