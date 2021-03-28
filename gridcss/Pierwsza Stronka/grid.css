@@ -4,8 +4,8 @@
 }
 .container {
     background-color: white;
-    paddomg: 5px;
-    height: 120vh;
+    padding: 5px;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
@@ -14,32 +14,33 @@
     "a e d";
 }
 header {
-    margin: 4px;
     background-color:red;
     grid-area: a;
-    height: 120vh;      
+    height: 100vh;
+    
+    
 }
 nav {
-    margin: 4px;
     background-color: lightgreen;
     grid-area: b;
-    height: 40vh;
+    height: 33vh;
 }
 main {
-    margin: 4px;
 background-color: aqua;
 grid-area: c;
-height: 40vh;
+height: 33vh;
+
 }
 aside {
-    margin: 4px;
     grid-area: e;
-    background-color: yellow;
-    height: 40vh;        
+    background-color: green;
+    height: 33vh;
+    
+    
 }
 footer {
-    margin: 4px;
-background-color: orange;
+background-color: yellow;
 grid-area: d;
-height: 120vh;
+height: 100vh;
+
 }
