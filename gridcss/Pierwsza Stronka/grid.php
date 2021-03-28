@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="grid.css">
    </head>  
    <body>
-       div class="container">
+           <div class="container">
             <header>
                 <h1>CSS GRID</h1>
             </header>
