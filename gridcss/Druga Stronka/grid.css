@@ -5,42 +5,45 @@
 .container {
     background-color: white;
     padding: 5px;
-    height: 120vh;
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
-    "a b b"
-    "a c d"
-    "a e d";
+    "a b b b"
+    "a c c d"
+    "a e f d";
 }
 header {
-    margin: 4px;
-    background-color:red;
-    grid-area: a;
-    height: 120vh;      
+background-color:red;
+grid-area: a;
+height: 100vh;
+    
+    
 }
 nav {
-    margin: 4px;
     background-color: lightgreen;
     grid-area: b;
-    height: 40vh;
+    height: 20vh;
+    width: 100%;
 }
 main {
-    margin: 4px;
 background-color: aqua;
 grid-area: c;
 height: 40vh;
+
 }
 aside {
-    background-color: yellow;
-    margin: 4px;
-    grid-area: e;
-    height: 40vh;        
+    grid-area: d;
+    background-color: orange;
+    height: 80vh;
 }
-
 footer {
-    margin: 4px;
-background-color: orange;
-grid-area: d;
-height: 80vh;
+background-color: yellow;
+grid-area: e;
+height: 40vh;
+}
+.zolte {
+background-color: yellow;
+grid-area: f;
+height: 40vh;
 }
