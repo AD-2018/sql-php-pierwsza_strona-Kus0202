@@ -7,7 +7,7 @@
     <body>
         <div class="container">
       <header>
-      1
+      GRID CSS
       </header>
       <nav>
       2
