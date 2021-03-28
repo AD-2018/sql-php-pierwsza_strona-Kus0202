@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Szymon Kozak</title>
-        <link rel="stylesheet" href="style_1.css"/>
+        <title>Mateusz Kuś</title>
+        <link rel="stylesheet" href="grid.css"/>
     </head>
     <body>
         <div class="container">
