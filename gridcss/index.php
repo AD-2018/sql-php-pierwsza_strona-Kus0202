@@ -15,6 +15,13 @@
         <a class="panel" href="/gridcss/Trzecia Stronka/grid.php">Trzecia Stronka</a>
         <a class="panel" href="/gridcss/Czwarta Stronka/grid.php">Czwarta Stronka</a>
         <a class="panel" href="/gridcss/Piąta Stronka/grid.php">Piąta Stronka</a>
+         <a class="panel" href="/gridcss/Szósta Stronka/grid.php">Szósta Stronka</a>
+         <a class="panel" href="/gridcss/Siódma Stronka/grid.php">Siódma Stronka</a>
+         <a class="panel" href="/gridcss/Ósma Stronka/grid.php">Ósma Stronka</a>
+         <a class="panel" href="/gridcss/Dziewiąta Stronka/grid.php">Dziewiąta Stronka</a>
+         <a class="panel" href="/gridcss/Dziesiąta Stronka/grid.php">Dziesiąta Stronka</a>
+         <a class="panel" href="/gridcss/Jedenasta Stronka/grid.php">Jedenasta Stronka</a>
+         <a class="panel" href="/gridcss/Dwunasta Stronka/grid.php">Dwunasta Stronka</a>
         
     </div>
     </body>
