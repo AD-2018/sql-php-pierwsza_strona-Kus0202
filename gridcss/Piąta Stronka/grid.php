@@ -9,21 +9,18 @@
    </head>  
    <body>
        <div class="container">
-        <header>
-            <h1>1</h1>
-        </header>
-        <nav>
-        2
-        </nav>
-        <main>
-        3
-        </main>
-         <aside>
-           4
-      </aside>
-        <footer>
-           5
-        </footer>
-    </div>
-</body>
+            <header>
+                <h1>CSS GRID</h1>
+            </header>
+            <nav>
+                1
+            </nav>
+            <main>
+                2
+            </main>
+            <footer>
+                3
+            </footer>
+        </div>
+    </body>
 </html>
