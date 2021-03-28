@@ -6,36 +6,33 @@
     </head>
     <body>
         <div class="container">
-            <header>
-                <h1>CSS GRID</h1>
-            </header>
-            <nav>
-                1
-            </nav>
-            <main>
-                2
-            </main>
-            <aside>
-                4
-            </aside>
-            <footer>
-                3
-            </footer>
-            <div class="a">
-                5
-            </div>
-            <div class="b">
-                6
-            </div>
-            <div class="c">
-                7
-            </div>
-            <div class="d">
-                8
-            </div>
-            <div class="e">
-                9
-            </div>
-        </div>
-    </body>
+      <header>
+      1
+      </header>
+      <nav>
+      2
+      </nav>
+      <main>
+      3
+      </main>
+      <footer>
+      4
+      </footer>
+      <aside>
+      5
+      </aside>
+      <div class="zielony">
+      6
+      </div>
+      <div class="niebieski">
+      7
+      </div>
+      <div class="rozowy">
+      8
+      </div>
+      <div class="fioletowy">
+      9
+      </div>
+    </div>
+  </body>
 </html>
