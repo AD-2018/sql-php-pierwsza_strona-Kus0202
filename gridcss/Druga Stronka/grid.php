@@ -22,7 +22,7 @@
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
     echo('<table border="1">');
-        echo('<th>id</th><th>lekarz</th>');
+        echo('<th>id</th><th>Lekarz</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['lekarz'].'</td>');
@@ -47,7 +47,7 @@
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
     echo('<table border="1">');
-        echo('<th>id</th><th>lekarz</th><th>Uczeń</th>');
+        echo('<th>id</th><th>Lekarz</th><th>Pacjent</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['pacjent'].'</td><td>'.$row['lekarz'].'</td>');
@@ -72,7 +72,7 @@
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
     echo('<table border="1">');
-        echo('<th>Id</th><th>pacjent</th>');
+        echo('<th>Id</th><th>Pacjent</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['pacjent'].'</td>');
