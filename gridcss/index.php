@@ -12,8 +12,8 @@
     <div class = "nav">
         <a class="panel" href="/gridcss/Pierwsza Stronka/grid.php">Pierwsza Stronka</a>
         <a class="panel" href="/gridcss/Druga Stronka/grid.php">Druga Stronka</a>
-        <a class="panel" href="/gridcss/Trzecia Stronka/grid.php">Trzecia Stronka</a>
-        <a class="panel" href="/gridcss/Czwarta Stronka/grid.php">Czwarta Stronka</a>
+        <a class="panel" href="/gridcss/Trzecia Stronka/grid.html">Trzecia Stronka</a>
+        <a class="panel" href="/gridcss/Czwarta Stronka/grid.html">Czwarta Stronka</a>
         <a class="panel" href="/gridcss/Piąta Stronka/grid.html">Piąta Stronka</a>
          <a class="panel" href="/gridcss/Szósta Stronka/grid.html">Szósta Stronka</a>
          <a class="panel" href="/gridcss/Siódma Stronka/grid.html">Siódma Stronka</a>
