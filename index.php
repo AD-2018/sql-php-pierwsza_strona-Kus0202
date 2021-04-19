@@ -10,6 +10,7 @@
     <h1>Mateusz Kuś nr.20</h1>
     <nav>
         <ul>
+            <?php include_once("menu.php"); ?>
              <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kus0202">GitHub</a></li> 
                 <li><a href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
                 <li><a href="pracownicy/funkcje_agregujące.php">Funkcję Agregujące</a></li>
