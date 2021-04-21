@@ -28,16 +28,7 @@
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['Nauczyciel'].'</td>');
             echo('</tr>');
-		'<td>
-	
-                    <form action="delnaucz.php" method="POST">
-                            <input type="text" name="id_nauczyciel" value="'.$row["id_nauczyciel"].'" hidden>
-                            <input type="submit" value="Usuń">
-                        </form>
-              </td>');    
-                
-                    echo('</tr>');
-                    }
+		
 
                     echo('</table>');
      
@@ -60,7 +51,7 @@
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
     echo('<table border="1">');
-        echo('<th>id</th><th>Nauczyciel</th><th>nazwisko</th>');
+        echo('<th>id</th><th>Nauczyciel</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['Nauczyciel'].'</td><td>'.$row['nazwisko'].'</td>');
