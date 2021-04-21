@@ -28,12 +28,10 @@
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['Nauczyciel'].'</td>');
             echo('</tr>');
-     }
-        echo('</table>');
-                          '<td>
+		'<td>
 	
                     <form action="delnaucz.php" method="POST">
-                            <input type="text" name="id" value="'.$row["id"].'" hidden>
+                            <input type="text" name="id_nauczyciel" value="'.$row["id_nauczyciel"].'" hidden>
                             <input type="submit" value="Usuń">
                         </form>
               </td>');    
@@ -42,6 +40,8 @@
                     }
 
                     echo('</table>');
+     
+         
 ?>
         </div>
       </header>
