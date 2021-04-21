@@ -30,6 +30,18 @@
             echo('</tr>');
      }
         echo('</table>');
+                          '<td>
+	
+                    <form action="delnaucz.php" method="POST">
+                            <input type="text" name="id" value="'.$row["id"].'" hidden>
+                            <input type="submit" value="Usuń">
+                        </form>
+              </td>');    
+                
+                    echo('</tr>');
+                    }
+
+                    echo('</table>');
 ?>
         </div>
       </header>
@@ -55,6 +67,7 @@
             echo('</tr>');
      }
         echo('</table>');
+                 
 ?>
       </main>
       <footer>
