@@ -12,25 +12,25 @@
                                          <div class="container">
      <header>
       <div class="tabela1">
-      <?php
+   <?php
     require_once("../../connect.php");
     $sql = "SELECT * FROM nauczyciele";
     echo("<br>");
     echo($sql);
     $result = mysqli_query($conn, $sql);
     if ( $result) {
+        echo "<li>ok";
         } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
     echo('<table border="1">');
-        echo('<th>ID</th><th>Nauczyciel</th><th>Nauczyciel</th><th>Usuń</th>');
+        echo('<th>id</th><th>Nauczyciel</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['Nauczyciel'].'</td>');
             echo('</tr>');
-		
-
-                    echo('</table>');
+     }
+        echo('</table>');
      
          
 ?>
