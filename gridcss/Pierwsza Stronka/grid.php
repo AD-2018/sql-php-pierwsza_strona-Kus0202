@@ -23,7 +23,7 @@
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
     echo('<table border="1">');
-        echo('<th>id</th><th>Nauczyciel</th>');
+        echo('<th>ID</th><th>Nauczyciel</th><th>Nauczyciel</th><th>Usuń</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['Nauczyciel'].'</td>');
