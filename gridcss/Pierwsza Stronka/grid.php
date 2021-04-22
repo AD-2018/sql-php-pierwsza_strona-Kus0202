@@ -31,22 +31,15 @@
      }
         echo('</table>');
                          
-               echo('<table border="1" class="tabelka_moja">');
-          echo ("<tr><th>ID</th><th>Nauczyciele</th><th>Usuwanie</th></tr>");
-          while($row = mysqli_fetch_assoc($result)) {
-              echo ('<tr>');
-             echo('<td>'.$row['id'].'</td>'.'<td>'.$row['projekt'].'</td>'.
-          
-                   '<td>
-            <form action="../delete.php" method="POST">
-                  <input type="hidden" name="id" value="'.$row['id'].'">
-                  <input type="submit" value="Usuń">
-                </form>
-            </td>');
-              echo ('</tr>');           
+                   
     
          ?>
-                
+                   <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
+                <form action="../delete.php" method="POST">
+                    <input type="number" name="id">
+                    <input name="tabela" value="Usuń" hidden>
+                    <input type="submit" class="button_x" value="Usuń">
+                </form>
             
         </div>
       </header>
