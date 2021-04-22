@@ -30,6 +30,12 @@
      }
         echo('</table>');
 ?>
+                             <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
+                <form action="../delete.php" method="POST">
+                    <input type="number" name="id">
+                    <input name="tabela" value="Usuń" hidden>
+                    <input type="submit" class="button_x" value="Usuń">
+                </form>
         </div>
       </header>
       <nav>
@@ -54,7 +60,14 @@
             echo('</tr>');
      }
         echo('</table>');
+                                                                      
 ?>
+                 <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
+                <form action="../delete.php" method="POST">
+                    <input type="number" name="id">
+                    <input name="tabela" value="Usuń" hidden>
+                    <input type="submit" class="button_x" value="Usuń">
+                </form>
       </main>
       <footer>
       4
@@ -80,7 +93,13 @@
      }
         echo('</table>');
 ?>
-        </div>
+                <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
+                <form action="../delete.php" method="POST">
+                    <input type="number" name="id">
+                    <input name="tabela" value="Usuń" hidden>
+                    <input type="submit" class="button_x" value="Usuń">
+                </form>
+          </div>
       </aside>
     </div>
   </body>
