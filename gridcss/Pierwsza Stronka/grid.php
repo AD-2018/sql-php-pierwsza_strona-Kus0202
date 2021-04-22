@@ -31,14 +31,15 @@
      }
         echo('</table>');
                           
-    
-         ?>
-                           <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
-                <form action="../delete.php" method="POST">
-                    <input type="number" name="id">
-                    <input name="tabela" value="Usuń" hidden>
-                    <input type="submit" class="button_x" value="Usuń">
+    '<td>
+            <form action="../delete.php" method="POST">
+                  <input type="hidden" name="id" value="'.$row['id'].'">
+                  <input type="submit" value="Usuń">
                 </form>
+            </td>');
+              echo ('</tr>');
+         ?>
+            
         </div>
       </header>
       <nav>
