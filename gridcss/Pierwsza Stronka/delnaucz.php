@@ -1,5 +1,5 @@
 <?php
-echo("Jesteś w delete.php <br>");
+echo("Jesteś w deluczen.php <br>");
 echo $_POST['id'];
 
 require_once("../../connect.php");
