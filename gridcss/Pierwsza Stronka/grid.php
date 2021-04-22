@@ -34,7 +34,7 @@
     
          ?>
                            <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
-                <form action="./delete.php" method="POST">
+                <form action="../delete.php" method="POST">
                     <input type="number" name="id">
                     <input name="tabela" value="Usuń" hidden>
                     <input type="submit" class="button_x" value="Usuń">
@@ -66,7 +66,7 @@
                   
                  ?>
                   <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
-                <form action="./delete.php" method="POST">
+                <form action="../delete.php" method="POST">
                     <input type="number" name="id">
                     <input name="tabela" value="Usuń" hidden>
                     <input type="submit" class="button_x" value="Usuń">
@@ -97,7 +97,7 @@
         echo('</table>');
                ?>
                            <h1>PODAJ ID TO USUNĘ OSOBĘ Z TABELI</h1>
-                <form action="./delete.php" method="POST">
+                <form action="../delete.php" method="POST">
                     <input type="number" name="id">
                     <input name="tabela" value="Usuń" hidden>
                     <input type="submit" class="button_x" value="Usuń">
