@@ -6,7 +6,7 @@ require_once("../../connect.php");
 
 
 
-$sql = "SELECT szkola.id, Nauczyciel, nazwisko FROM nauczyciele, szkola, Uczen where nauczyciele.id=szkola.nauczyciele_id and Uczen.id=szkola.uczen_id";
+$sql = "SELECT szkola.id, Nauczyciel, nazwisko FROM nauczyciele, szkola,";
 
 echo $sql;
 
