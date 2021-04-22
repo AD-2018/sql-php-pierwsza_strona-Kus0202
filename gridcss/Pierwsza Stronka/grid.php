@@ -30,8 +30,10 @@
             echo('</tr>');
      }
         echo('</table>');
+                         
                           
     '<td>
+    <h1>PODAJ ID A OSOBA ZNIKNIE Z TABELI</h1>
             <form action="../delete.php" method="POST">
                   <input type="hidden" name="id" value="'.$row['id'].'">
                   <input type="submit" value="Usuń">
