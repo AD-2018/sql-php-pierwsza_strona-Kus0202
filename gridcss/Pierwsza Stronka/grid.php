@@ -38,7 +38,7 @@
              echo('<td>'.$row['id'].'</td>'.'<td>'.$row['projekt'].'</td>'.
           
                    '<td>
-            <form action="delproj.php" method="POST">
+            <form action="../delete.php" method="POST">
                   <input type="hidden" name="id" value="'.$row['id'].'">
                   <input type="submit" value="Usuń">
                 </form>
