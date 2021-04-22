@@ -27,18 +27,6 @@
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['Nauczyciel'].'</td>');
-            
-            '<td>
-	
-                    <form action="delnaucz.php" method="POST">
-                            <input type="text" name="id" value="'.$row["id"].'" hidden>
-                            <input type="submit" value="Usuń">
-                        </form>
-              </td>');
-			    
-			   
-			    
-			    
                     echo('</tr>');
           
             
@@ -99,15 +87,7 @@
         echo('<th>Id</th><th>nazwisko</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
-            echo('<td>'.$row['id'].'</td><td>'.$row['nazwisko'].'</td>');
-            '<td>
-	
-                    <form action="deluczen.php" method="POST">
-                            <input type="text" name="id" value="'.$row["id"].'" hidden>
-                            <input type="submit" value="Usuń">
-                        </form>
-              </td>');
-			    
+            echo('<td>'.$row['id'].'</td><td>'.$row['nazwisko'].'</td>');		    
             echo('</tr>');
      }
         echo('</table>');
