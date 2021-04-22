@@ -13,12 +13,13 @@
      <header>
       <div class="tabela1">
    <?php
-    require_once("../../connect.php");
+   require_once("../../connect.php");
     $sql = "SELECT * FROM nauczyciele";
     echo("<br>");
     echo($sql);
     $result = mysqli_query($conn, $sql);
     if ( $result) {
+        echo "<li>ok";
         } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
@@ -27,14 +28,9 @@
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
             echo('<td>'.$row['id'].'</td><td>'.$row['Nauczyciel'].'</td>');
-                    echo('</tr>');
-          
-            
+            echo('</tr>');
      }
-                  
         echo('</table>');
-                         
-                   
     
          ?>
            
@@ -80,6 +76,7 @@
     echo($sql);
     $result = mysqli_query($conn, $sql);
     if ( $result) {
+        echo "<li>ok";
         } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
@@ -87,7 +84,7 @@
         echo('<th>Id</th><th>nazwisko</th>');
         while($row=mysqli_fetch_assoc($result)){
             echo('<tr>');
-            echo('<td>'.$row['id'].'</td><td>'.$row['nazwisko'].'</td>');		    
+            echo('<td>'.$row['id'].'</td><td>'.$row['nazwisko'].'</td>');
             echo('</tr>');
      }
         echo('</table>');
