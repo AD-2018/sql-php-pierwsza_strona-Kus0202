@@ -37,7 +37,7 @@
         echo('</table>');
 ?>
         <h1>Podaj id to osoba zniknie z tabeli</h1>
-                <form action="../delete.php" method="POST">
+                <form action="delnaucz.php" method="POST">
                     <input type="number" name="id">
                     <input name="tabela" value="Usuń" hidden>
                     <input type="submit" class="button_x" value="Usuń">
